@@ -1,5 +1,9 @@
 # pj-quiz-app
 
-- frontend: Next.js (PORT 3000)
-- backend: Nestjs (PORT 4000)
+- frontend (PORT 3000)
+  - Next.js (SSG)
+  - HeroUI
+- backend (PORT 4000)
+  - Nestjs
+  - Dynamoose
 - infra: AWS CDK
