@@ -1,0 +1,26 @@
+{
+  "name": "pj-quiz-app",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/takuya-yone/pj-quiz-app#readme",
+  "bugs": {
+    "url": "https://github.com/takuya-yone/pj-quiz-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takuya-yone/pj-quiz-app.git"
+  },
+  "packageManager": "yarn@4.9.1",
+  "private": true,
+  "workspaces": [
+    "pkg/frontend",
+    "pkg/backend",
+    "pkg/infra"
+  ],
+  "scripts": {
+    "ncu": "ncu -w frontend -w backend -w infra"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^18.0.1"
+  }
+}
