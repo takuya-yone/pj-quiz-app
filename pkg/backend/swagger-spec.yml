@@ -6,7 +6,11 @@ paths:
       parameters: []
       responses:
         '200':
-          description: Success
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AppServiceType'
       summary: Get sample data
       tags:
         - App
@@ -18,4 +22,11 @@ info:
 tags: []
 servers: []
 components:
-  schemas: {}
+  schemas:
+    AppServiceType:
+      type: object
+      properties:
+        message:
+          type: string
+      required:
+        - message

@@ -18,10 +18,13 @@
 		"serve": "^14.2.4"
 	},
 	"devDependencies": {
+		"@faker-js/faker": "^9.8.0",
 		"@tailwindcss/postcss": "^4",
 		"@types/node": "^22",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
+		"msw": "^2.8.6",
+		"orval": "^7.9.0",
 		"tailwindcss": "^4",
 		"typescript": "^5"
 	}

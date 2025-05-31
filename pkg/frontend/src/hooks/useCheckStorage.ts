@@ -1,11 +1,19 @@
 import { useEffect, useState } from "react";
 
+import { appControllerGetHello } from '@/apiClient'
+
 export const useCheckStorage = () => {
 	const [data, setData] = useState<string>();
 
 	useEffect(() => {
 		checkUserName();
+		res()
 	}, []);
+
+	const res = async() => {
+      const response = await appControllerGetHello()
+      alert(JSON.stringify(response.data.message));
+    }
 
 	const checkUserName = () => {
 		const data = sessionStorage.getItem("username");
